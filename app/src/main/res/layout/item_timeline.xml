@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                                    android:id="@+id/card_view"
+                                    android:layout_gravity="center"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:foreground="?android:attr/selectableItemBackground"
+                                    card_view:cardBackgroundColor="@color/white"
+                                    card_view:cardElevation="5dp"
+                                    card_view:cardCornerRadius="4dp"
+                                    card_view:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:id="@+id/iv_cover_container"
+            android:layout_width="@dimen/timeline_height"
+            android:layout_height="@dimen/timeline_height">
+
+            <ImageView
+                android:id="@+id/iv_cover"
+                android:scaleType="centerInside"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/app_name"/>
+
+            <TextView
+                android:id="@+id/tv_badge"
+                android:layout_gravity="top|end"
+                android:text="@string/default_badge_number"
+                android:background="@drawable/badge_circle_bg"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_topic"
+            android:layout_toRightOf="@+id/iv_cover_container"
+            android:layout_toEndOf="@+id/iv_cover_container"
+            android:textSize="18sp"
+            android:paddingLeft="@dimen/padding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_last_message"
+            android:layout_toRightOf="@+id/iv_cover_container"
+            android:layout_toEndOf="@+id/iv_cover_container"
+            android:textSize="14sp"
+            android:paddingLeft="@dimen/padding"
+            android:maxLines="1"
+            android:layout_below="@+id/tv_topic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Space
+            android:id="@+id/space"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/tv_last_message"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btn_delete"
+            style="?android:attr/borderlessButtonStyle"
+            android:textColor="@color/blue_700"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/space"
+            android:layout_toStartOf="@+id/space"
+            android:layout_below="@+id/tv_last_message"
+            android:text="@string/Delete"/>
+
+        <Button
+            android:id="@+id/btn_meet"
+            style="?android:attr/borderlessButtonStyle"
+            android:textColor="@color/blue_700"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_last_message"
+            android:layout_toLeftOf="@+id/btn_delete"
+            android:layout_toStartOf="@+id/btn_delete"
+            android:text="@string/Meet"/>
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

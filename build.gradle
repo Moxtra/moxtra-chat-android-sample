@@ -1,0 +1,22 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        jcenter()
+        google()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.2.1'
+        classpath 'com.google.gms:google-services:4.0.1'
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        maven() {
+            url "http://maven.moxtra.com:8081/nexus/content/groups/public"
+        }
+        jcenter()
+    }
+}

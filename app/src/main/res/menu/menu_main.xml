@@ -1,0 +1,52 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools">
+    <!--item
+        android:id="@+id/action_search"
+        android:title="@string/search"
+        android:icon="@drawable/ic_action_search"
+        android:orderInCategory="10"
+        app:showAsAction="ifRoom|collapseActionView"
+        app:actionViewClass="android.support.v7.widget.SearchView" /-->
+    <!--item
+        android:id="@+id/action_sort"
+        android:title="@string/action_sort"
+        android:icon="@drawable/ic_fa_sort"
+        android:visible="false"
+        android:orderInCategory="20"
+        app:showAsAction="ifRoom" /-->
+    <!--item
+        android:id="@+id/action_settings"
+        android:title="@string/action_settings"
+        android:icon="@drawable/ic_action_settings"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom" /-->
+    <item
+        android:id="@+id/miActionProgress"
+        android:orderInCategory="10"
+        android:title="@string/loading"
+        android:visible="false"
+        app:actionLayout="@layout/action_view_progressbar"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/action_logout"
+        android:icon="@drawable/ic_fa_sign_out"
+        android:orderInCategory="100"
+        android:title="@string/action_logout"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/action_mentions"
+        android:icon="@drawable/ic_action_mentions"
+        android:orderInCategory="20"
+        android:title="@string/Mentions"
+        android:visible="false"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_todos"
+        android:icon="@drawable/ic_action_mytodos"
+        android:orderInCategory="30"
+        android:title="@string/My_To_Dos"
+        android:visible="false"
+        app:showAsAction="never"/>
+
+</menu>

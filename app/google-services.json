@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "3367684136",
+    "firebase_url": "https://ptc-mx.firebaseio.com",
+    "project_id": "ptc-mx",
+    "storage_bucket": "ptc-mx.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:3367684136:android:4fbc156cefdd7144",
+        "android_client_info": {
+          "package_name": "com.moxtra.moxiechat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "3367684136-5pbgc85k92i3m5dnrejfntonq3v5riar.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApgkT2uVqa0YO_ZqsKfF4Yy_ghrPuhcX0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
